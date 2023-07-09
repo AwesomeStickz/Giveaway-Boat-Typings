@@ -62,7 +62,7 @@ export interface ScheduledGiveawayEditData extends ScheduledGiveawayData {
     editorID: string;
 }
 
-export interface TemplateData extends GiveawayData {
+export interface TemplateData extends Omit<GiveawayData, 'channelID' | 'duration' | 'endTime' | 'numberOfWinners' | 'item'> {
     id: string;
     templateName: string;
     channelID: string | null;
@@ -73,8 +73,8 @@ export interface TemplateData extends GiveawayData {
     locked?: boolean | null;
 }
 
-export interface TemplateEditData extends TemplateData {
-    id?: string;
+export interface TemplateEditData extends Omit<TemplateData, 'id'> {
+    id?: number;
     editorID: string;
 }
 
