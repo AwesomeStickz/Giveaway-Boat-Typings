@@ -1,0 +1,11 @@
+{
+    "name": "giveaway-boat-typings",
+    "version": "1.0.0",
+    "scripts": {
+        "prepare": "tsc",
+        "preinstall": "tsc"
+    },
+    "dependencies": {
+        "tslib": "^2.6.0"
+    }
+}
