@@ -1,2 +1,2 @@
-export * from './apiTypings';
-export * from './giveawayTypings';
+export * from './apiTypings.js';
+export * from './giveawayTypings.js';
