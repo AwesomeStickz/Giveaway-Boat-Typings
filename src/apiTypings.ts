@@ -56,7 +56,7 @@ export enum APIErrorCodes {
     entriesIsNotNumber = 5039,
     entriesIsLess = 5040,
     entriesIsMore = 5041,
-    entiresIsMoreThanAllowedInNonPremiumServer = 5042,
+    entriesIsMoreThanAllowedInNonPremiumServer = 5042,
 
     invalidImageLink = 5043,
     invalidThumbnailLink = 5044,
