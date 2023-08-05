@@ -119,5 +119,8 @@ export enum APIErrorCodes {
     reachedMaxTemplatesLimit = 5083,
     lacksPremiumForRepeatTimes = 5084,
 
+    // Misc
+    lacksPermissionToPerformThisAction = 9000,
+
     unknownError = 9999,
 }
