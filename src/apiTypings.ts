@@ -95,29 +95,31 @@ export enum APIErrorCodes {
     giveawayWinnersRoleRemoveDurationIsMore = 5068,
     giveawayWinnersRoleRemoveDurationIsMoreThanAllowedInNonPremiumServer = 5069,
 
+    giveawayShowEntryCaptchaIsInvalid = 5070,
+
     // Scheduling
-    scheduledGiveawayNotFound = 5070,
+    scheduledGiveawayNotFound = 6000,
 
-    missingStartDuration = 5071,
-    startDurationIsLess = 5072,
-    startDurationIsMore = 5073,
+    missingStartDuration = 6001,
+    startDurationIsLess = 6002,
+    startDurationIsMore = 6003,
 
-    repeatDurationIsLess = 5074,
-    repeatDurationIsMore = 5075,
+    repeatDurationIsLess = 6004,
+    repeatDurationIsMore = 6005,
 
     // Templates
-    templateNotFound = 5076,
-    templateIsLocked = 5077,
+    templateNotFound = 7000,
+    templateIsLocked = 7001,
 
-    invalidTemplateName = 5078,
-    templateNameAlreadyExists = 5079,
+    invalidTemplateName = 7002,
+    templateNameAlreadyExists = 7003,
 
     // Premium
-    lacksPremiumForRepeatDuration = 5080,
-    reachedMaxRepeatedGiveawaysLimit = 5081,
-    reachedMaxTemplatesLimitWithoutPremium = 5082,
-    reachedMaxTemplatesLimit = 5083,
-    lacksPremiumForRepeatTimes = 5084,
+    lacksPremiumForRepeatDuration = 8000,
+    reachedMaxRepeatedGiveawaysLimit = 8001,
+    reachedMaxTemplatesLimitWithoutPremium = 8002,
+    reachedMaxTemplatesLimit = 8003,
+    lacksPremiumForRepeatTimes = 8004,
 
     // Misc
     lacksPermissionToPerformThisAction = 9000,
