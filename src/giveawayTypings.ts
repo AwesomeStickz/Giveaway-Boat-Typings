@@ -33,6 +33,7 @@ export interface GiveawayData {
     giveawayWinnersRoleRemoveDuration: number | null;
     repeatDuration: number | null;
     repeatTimes: number | null;
+    showGiveawayEntryCaptcha: boolean | null;
 }
 
 export interface GiveawayEditData extends GiveawayData {
