@@ -86,7 +86,7 @@ export interface CustomBotData {
         status?: 'online' | 'idle' | 'dnd' | 'offline';
         game: {
             name?: string;
-            type?: 0 | 1 | 2 | 3;
+            type?: 0 | 1 | 2 | 3 | 4;
             url?: string;
         };
     };
