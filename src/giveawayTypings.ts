@@ -34,6 +34,7 @@ export interface GiveawayData {
     repeatDuration: number | null;
     repeatTimes: number | null;
     showGiveawayEntryCaptcha: boolean | null;
+    isDrop: boolean | null;
 }
 
 export interface GiveawayEditData extends GiveawayData {
