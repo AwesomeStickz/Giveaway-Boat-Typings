@@ -14,7 +14,7 @@ export interface GiveawayData {
     requiredTotalMessages: number | null;
     requiredRoleIDs: string[] | null;
     requiredRoleType: 'all' | 'any' | null;
-    requirementBypassRoleIDs: string | null;
+    requirementBypassRoleIDs: string[] | null;
     blacklistedRoleIDs: string[] | null;
     entries: { roleID: string; entries: number }[] | null;
     imageLink: string | null;
