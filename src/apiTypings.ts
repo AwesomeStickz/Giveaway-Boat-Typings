@@ -47,7 +47,8 @@ export enum APIErrorCodes {
     requiredRolesIsMoreThanAllowedInNonPremiumServer = 51102,
     requiredRoleTypeIsInvalid = 51101,
 
-    requirementBypassRoleNotFound = 51200,
+    requirementBypassRoleIsNotFound = 51200,
+    requirementBypassRolesIsMoreThanAllowedInNonPremiumServer = 51201,
 
     blacklistedRoleIsNotFound = 51300,
     blacklistedRolesIsMoreThanAllowedInNonPremiumServer = 51302,
