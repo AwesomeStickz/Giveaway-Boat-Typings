@@ -98,6 +98,11 @@ export enum APIErrorCodes {
 
     giveawayShowEntryCaptchaIsInvalid = 52500,
 
+    giveawayDropIsInvalid = 52600,
+
+    giveawayWinnersThreadIsInvalid = 52700,
+    giveawayWinnersThreadTypeIsInvalid = 52701,
+
     // Scheduling
     scheduledGiveawayNotFound = 60000,
 
