@@ -100,14 +100,14 @@ export enum APIErrorCodes {
 
     giveawayDropIsInvalid = 52600,
 
-    giveawayWinnersThreadIsInvalid = 52700,
+    createGiveawayWinnersThreadIsInvalid = 52700,
     giveawayWinnersThreadTypeIsInvalid = 52701,
 
-    giveawayWinnersThreadCloseDurationIsLess = 52702,
-    giveawayWinnersThreadCloseDurationIsMore = 52703,
-    giveawayWinnersThreadCloseDurationIsMoreThanAllowedInNonPremiumServer = 52704,
+    giveawayWinnersThreadCloseDurationIsLess = 52800,
+    giveawayWinnersThreadCloseDurationIsMore = 52801,
+    giveawayWinnersThreadCloseDurationIsMoreThanAllowedInNonPremiumServer = 52802,
 
-    giveawayWinnersThreadMessageIsLong = 52800,
+    giveawayWinnersThreadMessageIsLong = 52900,
 
     // Scheduling
     scheduledGiveawayNotFound = 60000,
