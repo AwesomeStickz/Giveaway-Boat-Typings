@@ -37,7 +37,7 @@ export interface GiveawayData {
     isDrop: boolean | null;
     createGiveawayWinnersThread: boolean | null;
     isGiveawayWinnersThreadTypePublic: boolean | null;
-    giveawayWinnersThreadCloseDuration: bigint | null;
+    giveawayWinnersThreadCloseDuration: number | null;
     giveawayWinnersThreadMessage: string | null;
 }
 
