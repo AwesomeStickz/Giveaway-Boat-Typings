@@ -35,8 +35,10 @@ export interface GiveawayData {
     repeatTimes: number | null;
     showGiveawayEntryCaptcha: boolean | null;
     isDrop: boolean | null;
-    createWinnersThread: boolean | null;
-    isWinnersThreadTypePublic: boolean | null;
+    createGiveawayWinnersThread: boolean | null;
+    isGiveawayWinnersThreadTypePublic: boolean | null;
+    giveawayWinnersThreadCloseDuration: bigint | null;
+    giveawayWinnersThreadMessage: string | null;
 }
 
 export interface GiveawayEditData extends GiveawayData {

@@ -103,6 +103,12 @@ export enum APIErrorCodes {
     giveawayWinnersThreadIsInvalid = 52700,
     giveawayWinnersThreadTypeIsInvalid = 52701,
 
+    giveawayWinnersThreadCloseDurationIsLess = 52702,
+    giveawayWinnersThreadCloseDurationIsMore = 52703,
+    giveawayWinnersThreadCloseDurationIsMoreThanAllowedInNonPremiumServer = 52704,
+
+    giveawayWinnersThreadMessageIsLong = 52800,
+
     // Scheduling
     scheduledGiveawayNotFound = 60000,
 
