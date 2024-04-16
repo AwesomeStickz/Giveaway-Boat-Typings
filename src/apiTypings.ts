@@ -105,7 +105,6 @@ export enum APIErrorCodes {
 
     giveawayWinnersThreadCloseDurationIsLess = 52800,
     giveawayWinnersThreadCloseDurationIsMore = 52801,
-    giveawayWinnersThreadCloseDurationIsMoreThanAllowedInNonPremiumServer = 52802,
 
     giveawayWinnersThreadMessageIsLong = 52900,
 
