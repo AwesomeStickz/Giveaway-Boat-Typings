@@ -132,6 +132,7 @@ export enum APIErrorCodes {
     reachedMaxTemplatesLimitWithoutPremium = 80002,
     reachedMaxTemplatesLimit = 80003,
     lacksPremiumForRepeatTimes = 80004,
+    lacksPremiumForGiveawayWinnersThreadCloseDuration = 80005,
 
     // Misc
     lacksPermissionToPerformThisAction = 90000,
