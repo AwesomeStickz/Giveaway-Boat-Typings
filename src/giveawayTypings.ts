@@ -49,7 +49,6 @@ export interface GiveawayEditData extends GiveawayData {
 
 export interface FullGiveawayData extends GiveawayData {
     messageID: string;
-    reactedUsers: string[];
     giveawayReactionEmojiID: string | null;
     giveawayReactionEmojiName: string | null;
     isGiveawayReactionEmojiAnimated: boolean | null;
