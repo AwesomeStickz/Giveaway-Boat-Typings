@@ -133,8 +133,71 @@ export enum APIErrorCodes {
     lacksPremiumForRepeatTimes = 80004,
     lacksPremiumForGiveawayWinnersThreadCloseDuration = 80005,
 
-    // Misc
-    lacksPermissionToPerformThisAction = 90000,
+    // Guild Settings
+    invalidNumberOfGiveawayCreatorRoles = 90000,
+    giveawayCreatorRoleNotFound = 90001,
+    currentGiveawayCreatorRoleIsAboveUsersHighestRole = 90002,
+    giveawayCreatorRoleIsAboveUsersHighestRole = 90003,
 
-    unknownError = 99999,
+    invalidNumberOfGiveawayManagerRoles = 90100,
+    giveawayManagerRoleNotFound = 90101,
+    currentGiveawayManagerRoleIsAboveUsersHighestRole = 90102,
+    giveawayManagerRoleIsAboveUsersHighestRole = 90103,
+
+    invalidLanguage = 90200,
+
+    invalidNumberOfLevelingBlacklistedChannelIds = 90300,
+    levelingBlacklistedChannelNotFound = 90301,
+
+    invalidNumberOfLevelRoles = 90400,
+    levelRoleNotFound = 90401,
+    levelRoleIsAboveBotsHighestRole = 90402,
+    levelRoleIsAboveUsersHighestRole = 90403,
+
+    levelingMessageChannelNotFound = 90500,
+
+    loggerChannelNotFound = 90600,
+
+    invalidNumberOfMessageCounterChannelIds = 90700,
+    messageCounterChannelNotFound = 90701,
+
+    invalidPrefix = 90800,
+
+    publicGiveawaysPreferredChannelNotFound = 90900,
+
+    // Premium Settings
+    premiumIsNotActive = 100000,
+    premiumIsAlreadyInDesiredState = 100001,
+    customBotIsAlreadyInDesiredState = 100002,
+    userLacksPremiumToActivateInServer = 100003,
+    userLacksFreePremiumSlotToActivateInServer = 100004,
+    guildLacksPremiumToActivateCustomBot = 100005,
+
+    customBotIsNotInServer = 100100,
+
+    invalidCustomBotAvatar = 100200,
+    customBotAvatarIsTooLarge = 100201,
+    customBotAvatarChangeIsRatelimited = 100202,
+
+    invalidCustomBotBanner = 100300,
+    customBotBannerIsTooLarge = 100301,
+    customBotBannerChangeIsRatelimited = 100302,
+
+    invalidCustomBotUsername = 100400,
+    customBotUsernameAlreadyExists = 100401,
+    customBotUsernameChangeIsRatelimited = 100402,
+
+    invalidCustomBotPresenceStatus = 100500,
+    invalidCustomBotActivityName = 100501,
+    invalidCustomBotActivityType = 100502,
+    invalidCustomBotActivityUrl = 100503,
+
+    invalidGiveawayEmoji = 100600,
+
+    // Misc
+    youLackPermissionToPerformThisAction = 900000,
+    invalidRequestParams = 900001,
+    invalidRequestPayload = 900002,
+
+    unknownError = 999999,
 }
