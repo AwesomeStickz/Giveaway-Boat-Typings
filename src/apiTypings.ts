@@ -196,8 +196,9 @@ export enum APIErrorCodes {
 
     // Misc
     youLackPermissionToPerformThisAction = 900000,
-    invalidRequestParams = 900001,
-    invalidRequestPayload = 900002,
+    invalidRequestUrl = 900001,
+    invalidRequestParams = 900002,
+    invalidRequestPayload = 900003,
 
     unknownError = 999999,
 }
