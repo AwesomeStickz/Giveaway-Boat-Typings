@@ -163,6 +163,7 @@ export enum APIErrorCodes {
     invalidPrefix = 90800,
 
     publicGiveawaysPreferredChannelNotFound = 90900,
+    publicGiveawaysGuildMaxInvitesReached = 90901,
 
     // Premium Settings
     premiumIsNotActive = 100000,
