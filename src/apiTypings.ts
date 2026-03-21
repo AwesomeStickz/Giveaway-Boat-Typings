@@ -85,7 +85,6 @@ export enum APIErrorCodes {
 
     stackEntriesIsInvalid = 52200,
     persistEntriesIsInvalid = 52201,
-    ignoreDefaultValuesIsInvalid = 52202,
 
     giveawayWinnersRoleIsNotFound = 52300,
     giveawayWinnersRoleTypeIsNotAllowed = 52301,
