@@ -4,6 +4,7 @@
         "module": "NodeNext",
         "lib": ["ES2023"],
         "allowJs": false,
+        "rootDir": "./src",
         "outDir": "./dist",
         "importHelpers": true,
 
