@@ -38,7 +38,26 @@ export interface GiveawayData {
     isGiveawayWinnersThreadTypePublic: boolean | null;
     giveawayWinnersThreadCloseDuration: number | null;
     giveawayWinnersThreadMessage: string | null;
+    customDiscordMessageObjects: {
+        giveawayMessage: DiscordMessageData | null;
+    } | null;
 }
+
+export type DiscordMessageData = {
+    content?: string;
+    embeds?: {
+        title?: string;
+        description?: string;
+        timestamp?: string;
+        color?: number;
+        footer?: { text: string; icon_url?: string };
+        image?: { url: string };
+        thumbnail?: { url: string };
+        author?: { name: string; url?: string; icon_url?: string };
+        fields?: { name: string; value: string; inline?: boolean }[];
+        url?: string;
+    }[];
+};
 
 export interface GiveawayEditData extends GiveawayData {
     messageID: string;
