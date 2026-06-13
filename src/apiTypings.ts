@@ -131,6 +131,7 @@ export enum APIErrorCodes {
     reachedMaxTemplatesLimit = 80003,
     lacksPremiumForRepeatTimes = 80004,
     lacksPremiumForGiveawayWinnersThreadCloseDuration = 80005,
+    lacksPremiumForCustomGiveawayMessage = 80006,
 
     // Guild Settings
     invalidNumberOfGiveawayCreatorRoles = 90000,
