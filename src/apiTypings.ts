@@ -187,6 +187,7 @@ export enum APIErrorCodes {
     invalidCustomBotUsername = 100400,
     customBotUsernameAlreadyExists = 100401,
     customBotUsernameChangeIsRatelimited = 100402,
+    botLacksChangeNicknamePermission = 100403,
 
     invalidCustomBotPresenceStatus = 100500,
     invalidCustomBotActivityName = 100501,
