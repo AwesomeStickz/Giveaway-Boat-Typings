@@ -179,10 +179,12 @@ export enum APIErrorCodes {
     invalidCustomBotAvatar = 100200,
     customBotAvatarIsTooLarge = 100201,
     customBotAvatarChangeIsRatelimited = 100202,
+    botAvatarChangeIsRatelimited = 100203,
 
     invalidCustomBotBanner = 100300,
     customBotBannerIsTooLarge = 100301,
     customBotBannerChangeIsRatelimited = 100302,
+    botBannerChangeIsRatelimited = 100303,
 
     invalidCustomBotUsername = 100400,
     customBotUsernameAlreadyExists = 100401,
@@ -194,7 +196,9 @@ export enum APIErrorCodes {
     invalidCustomBotActivityType = 100502,
     invalidCustomBotActivityUrl = 100503,
 
-    invalidGiveawayEmoji = 100600,
+    botProfileChangeIsRatelimited = 100600,
+
+    invalidGiveawayEmoji = 100700,
 
     // Misc
     youLackPermissionToPerformThisAction = 900000,
