@@ -7,6 +7,7 @@ export interface GiveawayData {
     numberOfWinners: number;
     item: string;
     hostID: string | null;
+    requiredAccountAge: number | null;
     requiredLevel: number | null;
     requiredDailyMessages: number | null;
     requiredWeeklyMessages: number | null;
@@ -14,6 +15,9 @@ export interface GiveawayData {
     requiredTotalMessages: number | null;
     requiredRoleIDs: string[] | null;
     requiredRoleType: 'all' | 'any' | null;
+    requiredServerBoosts: number | null;
+    requiredTimeInServer: number | null;
+    requireServerTag: boolean | null;
     requirementBypassRoleIDs: string[] | null;
     blacklistedRoleIDs: string[] | null;
     entries: { roleID: string; entries: number }[] | null;

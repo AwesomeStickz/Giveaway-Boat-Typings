@@ -23,89 +23,102 @@ export enum APIErrorCodes {
     hostIsLong = 50500,
     hostIsNotInOneLine = 50501,
 
-    requiredLevelIsNotNumber = 50600,
-    requiredLevelIsLess = 50601,
-    requiredLevelIsMore = 50602,
+    requiredAccountAgeIsLess = 50600,
+    requiredAccountAgeIsMore = 50601,
 
-    requiredDailyMessagesIsNotNumber = 50700,
-    requiredDailyMessagesIsLess = 50701,
-    requiredDailyMessagesIsMore = 50702,
+    requiredLevelIsNotNumber = 50700,
+    requiredLevelIsLess = 50701,
+    requiredLevelIsMore = 50702,
 
-    requiredWeeklyMessagesIsNotNumber = 50800,
-    requiredWeeklyMessagesIsLess = 50801,
-    requiredWeeklyMessagesIsMore = 50802,
+    requiredDailyMessagesIsNotNumber = 50800,
+    requiredDailyMessagesIsLess = 50801,
+    requiredDailyMessagesIsMore = 50802,
 
-    requiredMonthlyMessagesIsNotNumber = 50900,
-    requiredMonthlyMessagesIsLess = 50901,
-    requiredMonthlyMessagesIsMore = 50902,
+    requiredWeeklyMessagesIsNotNumber = 50900,
+    requiredWeeklyMessagesIsLess = 50901,
+    requiredWeeklyMessagesIsMore = 50902,
 
-    requiredTotalMessagesIsNotNumber = 51000,
-    requiredTotalMessagesIsLess = 51001,
-    requiredTotalMessagesIsMore = 51002,
+    requiredMonthlyMessagesIsNotNumber = 51000,
+    requiredMonthlyMessagesIsLess = 51001,
+    requiredMonthlyMessagesIsMore = 51002,
 
-    requiredRoleIsNotFound = 51100,
-    requiredRolesIsMoreThanAllowedInNonPremiumServer = 51102,
-    requiredRoleTypeIsInvalid = 51101,
+    requiredTotalMessagesIsNotNumber = 51100,
+    requiredTotalMessagesIsLess = 51101,
+    requiredTotalMessagesIsMore = 51102,
 
-    requirementBypassRoleIsNotFound = 51200,
-    requirementBypassRolesIsMoreThanAllowedInNonPremiumServer = 51201,
+    requiredServerBoostsIsNotNumber = 51200,
+    requiredServerBoostsIsLess = 51201,
+    requiredServerBoostsIsMore = 51202,
+    boosterBotIsNotInServer = 51203,
 
-    blacklistedRoleIsNotFound = 51300,
-    blacklistedRolesIsMoreThanAllowedInNonPremiumServer = 51302,
+    requiredTimeInServerIsLess = 51300,
+    requiredTimeInServerIsMore = 51301,
 
-    entriesRoleIsNotFound = 51400,
-    entriesIsNotNumber = 51401,
-    entriesIsLess = 51402,
-    entriesIsMore = 51403,
-    entriesIsMoreThanAllowedInNonPremiumServer = 51404,
+    requireServerTagIsInvalid = 51400,
 
-    invalidImageLink = 51500,
-    invalidThumbnailLink = 51501,
+    requiredRoleIsNotFound = 51500,
+    requiredRolesIsMoreThanAllowedInNonPremiumServer = 51502,
+    requiredRoleTypeIsInvalid = 51501,
 
-    invalidColorCode = 51600,
-    invalidEndColorCode = 51601,
+    requirementBypassRoleIsNotFound = 51600,
+    requirementBypassRolesIsMoreThanAllowedInNonPremiumServer = 51601,
 
-    entryConfirmationMessageIsLong = 51700,
-    entryConfirmationMessageIsNotInOneLine = 51701,
-    entryConfirmationMessageIsLongerThanAllowedInNonPremiumServer = 51702,
+    blacklistedRoleIsNotFound = 51700,
+    blacklistedRolesIsMoreThanAllowedInNonPremiumServer = 51702,
 
-    entryDenyMessageIsLong = 51800,
-    entryDenyMessageIsNotInOneLine = 51801,
-    entryDenyMessageIsLongerThanAllowedInNonPremiumServer = 51802,
+    entriesRoleIsNotFound = 51800,
+    entriesIsNotNumber = 51801,
+    entriesIsLess = 51802,
+    entriesIsMore = 51803,
+    entriesIsMoreThanAllowedInNonPremiumServer = 51804,
 
-    entryRemoveMessageIsLong = 51900,
-    entryRemoveMessageIsNotInOneLine = 51901,
-    entryRemoveMessageIsLongerThanAllowedInNonPremiumServer = 51902,
+    invalidImageLink = 51900,
+    invalidThumbnailLink = 51901,
 
-    giveawayCreateMessageIsLong = 52000,
+    invalidColorCode = 52000,
+    invalidEndColorCode = 52001,
 
-    giveawayWinnersDMMessageIsLong = 52100,
-    giveawayWinnersDMMessageIsNotInOneLine = 52101,
-    giveawayWinnersDMMessageIsLongerThanAllowedInNonPremiumServer = 52102,
+    entryConfirmationMessageIsLong = 52100,
+    entryConfirmationMessageIsNotInOneLine = 52101,
+    entryConfirmationMessageIsLongerThanAllowedInNonPremiumServer = 52102,
 
-    stackEntriesIsInvalid = 52200,
-    persistEntriesIsInvalid = 52201,
+    entryDenyMessageIsLong = 52200,
+    entryDenyMessageIsNotInOneLine = 52201,
+    entryDenyMessageIsLongerThanAllowedInNonPremiumServer = 52202,
 
-    giveawayWinnersRoleIsNotFound = 52300,
-    giveawayWinnersRoleTypeIsNotAllowed = 52301,
-    giveawayWinnersRoleIsAboveBotsHighestRole = 52302,
-    giveawayWinnersRoleIsAboveUsersHighestRole = 52303,
+    entryRemoveMessageIsLong = 52300,
+    entryRemoveMessageIsNotInOneLine = 52301,
+    entryRemoveMessageIsLongerThanAllowedInNonPremiumServer = 52302,
 
-    giveawayWinnersRoleRemoveDurationIsLess = 52400,
-    giveawayWinnersRoleRemoveDurationIsMore = 52401,
-    giveawayWinnersRoleRemoveDurationIsMoreThanAllowedInNonPremiumServer = 52402,
+    giveawayCreateMessageIsLong = 52400,
 
-    giveawayShowEntryCaptchaIsInvalid = 52500,
+    giveawayWinnersDMMessageIsLong = 52500,
+    giveawayWinnersDMMessageIsNotInOneLine = 52501,
+    giveawayWinnersDMMessageIsLongerThanAllowedInNonPremiumServer = 52502,
 
-    giveawayDropIsInvalid = 52600,
+    stackEntriesIsInvalid = 52600,
+    persistEntriesIsInvalid = 52601,
 
-    createGiveawayWinnersThreadIsInvalid = 52700,
-    giveawayWinnersThreadTypeIsInvalid = 52701,
+    giveawayWinnersRoleIsNotFound = 52700,
+    giveawayWinnersRoleTypeIsNotAllowed = 52701,
+    giveawayWinnersRoleIsAboveBotsHighestRole = 52702,
+    giveawayWinnersRoleIsAboveUsersHighestRole = 52703,
 
-    giveawayWinnersThreadCloseDurationIsLess = 52800,
-    giveawayWinnersThreadCloseDurationIsMore = 52801,
+    giveawayWinnersRoleRemoveDurationIsLess = 52800,
+    giveawayWinnersRoleRemoveDurationIsMore = 52801,
+    giveawayWinnersRoleRemoveDurationIsMoreThanAllowedInNonPremiumServer = 52802,
 
-    giveawayWinnersThreadMessageIsLong = 52900,
+    giveawayShowEntryCaptchaIsInvalid = 52900,
+
+    giveawayDropIsInvalid = 53000,
+
+    createGiveawayWinnersThreadIsInvalid = 53100,
+    giveawayWinnersThreadTypeIsInvalid = 53101,
+
+    giveawayWinnersThreadCloseDurationIsLess = 53200,
+    giveawayWinnersThreadCloseDurationIsMore = 53201,
+
+    giveawayWinnersThreadMessageIsLong = 53300,
 
     // Scheduling
     scheduledGiveawayNotFound = 60000,
@@ -132,6 +145,9 @@ export enum APIErrorCodes {
     lacksPremiumForRepeatTimes = 80004,
     lacksPremiumForGiveawayWinnersThreadCloseDuration = 80005,
     lacksPremiumForCustomGiveawayMessage = 80006,
+    lacksPremiumForRequiredAccountAge = 80007,
+    lacksPremiumForRequiredTimeInServer = 80008,
+    lacksPremiumForRequireServerTag = 80009,
 
     // Guild Settings
     invalidNumberOfGiveawayCreatorRoles = 90000,
