@@ -169,6 +169,7 @@ export enum APIErrorCodes {
     levelRoleNotFound = 90401,
     levelRoleIsAboveBotsHighestRole = 90402,
     levelRoleIsAboveUsersHighestRole = 90403,
+    duplicateLevelRoleLevel = 90404,
 
     levelingMessageChannelNotFound = 90500,
 
