@@ -217,6 +217,12 @@ export enum APIErrorCodes {
 
     invalidGiveawayEmoji = 100700,
 
+    subscriptionIsBeingCombined = 110000,
+    subscriptionIsScheduledToCancel = 110001,
+    subscriptionIsNotScheduledToCancel = 110002,
+    subscriptionCannotCoverMorePremiumServers = 110003,
+    subscriptionHasScheduledTierChange = 110004,
+
     // Misc
     youLackPermissionToPerformThisAction = 900000,
     invalidRequestUrl = 900001,
