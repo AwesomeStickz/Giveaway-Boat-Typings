@@ -138,16 +138,17 @@ export enum APIErrorCodes {
     templateNameAlreadyExists = 70101,
 
     // Premium
-    lacksPremiumForRepeatDuration = 80000,
+    lacksPremiumForAPIAccess = 80000,
     reachedMaxRepeatedGiveawaysLimit = 80001,
     reachedMaxTemplatesLimitWithoutPremium = 80002,
     reachedMaxTemplatesLimit = 80003,
-    lacksPremiumForRepeatTimes = 80004,
-    lacksPremiumForGiveawayWinnersThreadCloseDuration = 80005,
-    lacksPremiumForCustomGiveawayMessage = 80006,
-    lacksPremiumForRequiredAccountAge = 80007,
-    lacksPremiumForRequiredTimeInServer = 80008,
-    lacksPremiumForRequireServerTag = 80009,
+    lacksPremiumForRepeatDuration = 80004,
+    lacksPremiumForRepeatTimes = 80005,
+    lacksPremiumForGiveawayWinnersThreadCloseDuration = 80006,
+    lacksPremiumForCustomGiveawayMessage = 80007,
+    lacksPremiumForRequiredAccountAge = 80008,
+    lacksPremiumForRequiredTimeInServer = 80009,
+    lacksPremiumForRequireServerTag = 80010,
 
     // Guild Settings
     invalidNumberOfGiveawayCreatorRoles = 90000,
