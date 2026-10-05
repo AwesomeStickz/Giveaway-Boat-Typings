@@ -150,6 +150,26 @@ export enum APIErrorCodes {
     lacksPremiumForRequiredTimeInServer = 80009,
     lacksPremiumForRequireServerTag = 80010,
 
+    // Leveling Premium
+    lacksPremiumForCustomLevelUpMessage = 80100,
+    lacksPremiumForMoreLevelRolesPerLevel = 80101,
+    lacksPremiumForCustomXP = 80102,
+    lacksPremiumForLevelingCooldown = 80103,
+    lacksPremiumForXPMultipliers = 80104,
+    lacksPremiumForMoreLevelingBlacklistedRoles = 80105,
+    lacksPremiumForLevelingMinimumCharacters = 80106,
+    lacksPremiumForLevelingMinimumWords = 80107,
+    lacksPremiumForLevelRoleSync = 80108,
+
+    // Message Counter Premium
+    lacksPremiumForMoreMessageRoles = 80200,
+    lacksPremiumForMoreMessageRolesPerMessageCount = 80201,
+    lacksPremiumForMessageCounterCooldown = 80202,
+    lacksPremiumForMoreMessageCounterBlacklistedRoles = 80203,
+    lacksPremiumForMessageCounterMinimumCharacters = 80204,
+    lacksPremiumForMessageCounterMinimumWords = 80205,
+    lacksPremiumForMessageRoleSync = 80206,
+
     // Guild Settings
     invalidNumberOfGiveawayCreatorRoles = 90000,
     giveawayCreatorRoleNotFound = 90001,
@@ -163,26 +183,12 @@ export enum APIErrorCodes {
 
     invalidLanguage = 90200,
 
-    invalidNumberOfLevelingBlacklistedChannelIds = 90300,
-    levelingBlacklistedChannelNotFound = 90301,
+    loggerChannelNotFound = 90300,
 
-    invalidNumberOfLevelRoles = 90400,
-    levelRoleNotFound = 90401,
-    levelRoleIsAboveBotsHighestRole = 90402,
-    levelRoleIsAboveUsersHighestRole = 90403,
-    duplicateLevelRoleLevel = 90404,
+    invalidPrefix = 90400,
 
-    levelingMessageChannelNotFound = 90500,
-
-    loggerChannelNotFound = 90600,
-
-    invalidNumberOfMessageCounterChannelIds = 90700,
-    messageCounterChannelNotFound = 90701,
-
-    invalidPrefix = 90800,
-
-    publicGiveawaysPreferredChannelNotFound = 90900,
-    publicGiveawaysGuildMaxInvitesReached = 90901,
+    publicGiveawaysPreferredChannelNotFound = 90500,
+    publicGiveawaysGuildMaxInvitesReached = 90501,
 
     // Premium Settings
     premiumIsNotActive = 100000,
@@ -218,11 +224,72 @@ export enum APIErrorCodes {
 
     invalidGiveawayEmoji = 100700,
 
+    // Premium Subscription Errors
     subscriptionIsBeingCombined = 110000,
     subscriptionIsScheduledToCancel = 110001,
     subscriptionIsNotScheduledToCancel = 110002,
     subscriptionCannotCoverMorePremiumServers = 110003,
     subscriptionHasScheduledTierChange = 110004,
+
+    // Leveling Settings
+    levelingIsNotEnabled = 120000,
+
+    levelUpMessageChannelNotFound = 120100,
+
+    invalidNumberOfLevelRoles = 120200,
+    levelRoleNotFound = 120201,
+    levelRoleIsAboveBotsHighestRole = 120202,
+    levelRoleIsAboveUsersHighestRole = 120203,
+    invalidLevelRoleLevel = 120204,
+    duplicateLevelRole = 120205,
+    duplicateLevelRoleLevel = 120206,
+    tooManyLevelRolesPerLevel = 120207,
+    levelRoleSyncIsOnCooldown = 120208,
+    levelRoleSyncIsAlreadyRunning = 120209,
+
+    invalidXPAmount = 120300,
+    minXPIsMoreThanMaxXP = 120301,
+
+    invalidRoleXPMultiplier = 120400,
+    xpMultiplierRoleNotFound = 120401,
+    tooManyRoleXPMultipliers = 120402,
+    invalidChannelXPMultiplier = 120403,
+    xpMultiplierChannelNotFound = 120404,
+    tooManyChannelXPMultipliers = 120405,
+    invalidServerXPMultiplier = 120406,
+
+    invalidLevelingCooldown = 120500,
+
+    invalidNumberOfLevelingBlacklistedChannelIds = 120600,
+    levelingBlacklistedChannelNotFound = 120601,
+    levelingBlacklistedRoleNotFound = 120602,
+
+    invalidLevelingMinimumCharacters = 120700,
+    invalidLevelingMinimumWords = 120701,
+
+    // Message Counter Settings
+    messageCounterIsNotEnabled = 130000,
+
+    invalidNumberOfMessageRoles = 130100,
+    messageRoleNotFound = 130101,
+    messageRoleIsAboveBotsHighestRole = 130102,
+    messageRoleIsAboveUsersHighestRole = 130103,
+    invalidMessageRoleMessageCount = 130104,
+    duplicateMessageRole = 130105,
+    duplicateMessageRoleMessageCount = 130106,
+    tooManyMessageRolesPerMessageCount = 130107,
+    tooManyMessageRoleMessageCounts = 130108,
+    messageRoleSyncIsOnCooldown = 130109,
+    messageRoleSyncIsAlreadyRunning = 130110,
+
+    invalidMessageCounterCooldown = 130200,
+
+    invalidNumberOfMessageCounterBlacklistedChannelIds = 130300,
+    messageCounterBlacklistedChannelNotFound = 130301,
+    messageCounterBlacklistedRoleNotFound = 130302,
+
+    invalidMessageCounterMinimumCharacters = 130400,
+    invalidMessageCounterMinimumWords = 130401,
 
     // Misc
     youLackPermissionToPerformThisAction = 900000,
