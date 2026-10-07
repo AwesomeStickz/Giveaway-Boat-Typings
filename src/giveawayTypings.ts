@@ -42,6 +42,8 @@ export interface GiveawayData {
     isGiveawayWinnersThreadTypePublic: boolean | null;
     giveawayWinnersThreadCloseDuration: number | null;
     giveawayWinnersThreadMessage: string | null;
+    claimDuration: number | null;
+    claimRerollLimit: number | null;
     customDiscordMessageObjects: {
         giveawayMessage: DiscordMessageData | null;
     } | null;

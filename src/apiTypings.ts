@@ -120,6 +120,12 @@ export enum APIErrorCodes {
 
     giveawayWinnersThreadMessageIsLong = 53300,
 
+    claimDurationIsLess = 53400,
+    claimDurationIsMore = 53401,
+    claimDurationCannotBeUsedWithDrop = 53402,
+
+    claimRerollLimitIsInvalid = 53500,
+
     // Scheduling
     scheduledGiveawayNotFound = 60000,
 
@@ -149,6 +155,7 @@ export enum APIErrorCodes {
     lacksPremiumForRequiredAccountAge = 80008,
     lacksPremiumForRequiredTimeInServer = 80009,
     lacksPremiumForRequireServerTag = 80010,
+    lacksPremiumForClaimDuration = 80011,
 
     // Leveling Premium
     lacksPremiumForCustomLevelUpMessage = 80100,
