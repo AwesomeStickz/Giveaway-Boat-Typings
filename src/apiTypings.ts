@@ -126,6 +126,13 @@ export enum APIErrorCodes {
 
     claimRerollLimitIsInvalid = 53500,
 
+    requiredVotesIsNotNumber = 53700,
+    requiredVotesIsLess = 53701,
+    requiredVotesIsMore = 53702,
+    requiredVotesPeriodIsLess = 53703,
+    requiredVotesPeriodIsMore = 53704,
+    voteTrackerIsNotSetUp = 53705,
+
     // Scheduling
     scheduledGiveawayNotFound = 60000,
 
@@ -156,6 +163,7 @@ export enum APIErrorCodes {
     lacksPremiumForRequiredTimeInServer = 80009,
     lacksPremiumForRequireServerTag = 80010,
     lacksPremiumForClaimDuration = 80011,
+    lacksPremiumForRequiredVotes = 80012,
 
     // Leveling Premium
     lacksPremiumForCustomLevelUpMessage = 80100,
@@ -176,6 +184,16 @@ export enum APIErrorCodes {
     lacksPremiumForMessageCounterMinimumCharacters = 80204,
     lacksPremiumForMessageCounterMinimumWords = 80205,
     lacksPremiumForMessageRoleSync = 80206,
+
+    // Vote Tracker Premium
+    lacksPremiumForCustomVoteMessage = 80400,
+    lacksPremiumForMoreVoterRoles = 80401,
+    lacksPremiumForVoterRoleDuration = 80402,
+    lacksPremiumForVoteRoles = 80403,
+    lacksPremiumForVoteRoleSync = 80404,
+    lacksPremiumForVoteStreakGracePeriod = 80405,
+    lacksPremiumForVoteStreakRoles = 80406,
+    lacksPremiumForVoteReminders = 80407,
 
     // Guild Settings
     invalidNumberOfGiveawayCreatorRoles = 90000,
@@ -297,6 +315,43 @@ export enum APIErrorCodes {
 
     invalidMessageCounterMinimumCharacters = 130400,
     invalidMessageCounterMinimumWords = 130401,
+
+    // Vote Tracker Settings
+    invalidVoteTrackerWebhookSecret = 150000,
+    voteTrackerIntegrationIsConnected = 150001,
+
+    invalidVoteMessage = 150100,
+    voteMessageChannelNotFound = 150101,
+
+    invalidNumberOfVoterRoles = 150200,
+    voterRoleNotFound = 150201,
+    voterRoleIsAboveBotsHighestRole = 150202,
+    voterRoleIsAboveUsersHighestRole = 150203,
+    invalidVoterRoleDuration = 150204,
+
+    invalidNumberOfVoteRoles = 150300,
+    voteRoleNotFound = 150301,
+    voteRoleIsAboveBotsHighestRole = 150302,
+    voteRoleIsAboveUsersHighestRole = 150303,
+    invalidVoteRoleVoteCount = 150304,
+    duplicateVoteRole = 150305,
+    duplicateVoteRoleVoteCount = 150306,
+    tooManyVoteRolesPerVoteCount = 150307,
+    tooManyVoteRoleVoteCounts = 150308,
+    voteRoleSyncIsOnCooldown = 150309,
+    voteRoleSyncIsAlreadyRunning = 150310,
+
+    invalidVoteStreakGracePeriod = 150400,
+
+    invalidNumberOfVoteStreakRoles = 150500,
+    voteStreakRoleNotFound = 150501,
+    voteStreakRoleIsAboveBotsHighestRole = 150502,
+    voteStreakRoleIsAboveUsersHighestRole = 150503,
+    invalidVoteStreakRoleStreak = 150504,
+    duplicateVoteStreakRole = 150505,
+    duplicateVoteStreakRoleStreak = 150506,
+    tooManyVoteStreakRolesPerStreak = 150507,
+    tooManyVoteStreakRoleStreaks = 150508,
 
     // Misc
     youLackPermissionToPerformThisAction = 900000,

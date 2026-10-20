@@ -18,6 +18,8 @@ export interface GiveawayData {
     requiredServerBoosts: number | null;
     requiredTimeInServer: number | null;
     requireServerTag: boolean | null;
+    requiredVotes: number | null;
+    requiredVotesPeriod: number | null;
     requirementBypassRoleIDs: string[] | null;
     blacklistedRoleIDs: string[] | null;
     entries: { roleID: string; entries: number }[] | null;
