@@ -133,6 +133,11 @@ export enum APIErrorCodes {
     requiredVotesPeriodIsMore = 53704,
     voteTrackerIsNotSetUp = 53705,
 
+    requiredVoiceTimeIsNotNumber = 53900,
+    requiredVoiceTimeIsLess = 53901,
+    requiredVoiceTimeIsMore = 53902,
+    invalidRequiredVoiceTimePeriod = 53903,
+
     // Scheduling
     scheduledGiveawayNotFound = 60000,
 
@@ -194,6 +199,15 @@ export enum APIErrorCodes {
     lacksPremiumForVoteStreakGracePeriod = 80405,
     lacksPremiumForVoteStreakRoles = 80406,
     lacksPremiumForVoteReminders = 80407,
+
+    // Voice Tracker Premium
+    lacksPremiumForMoreVoiceRoles = 80700,
+    lacksPremiumForMoreVoiceRolesPerVoiceTime = 80701,
+    lacksPremiumForMoreVoiceTrackerBlacklistedRoles = 80702,
+    lacksPremiumForVoiceRoleSync = 80703,
+    lacksPremiumForCountingMutedVoiceMembers = 80704,
+    lacksPremiumForCountingDeafenedVoiceMembers = 80705,
+    lacksPremiumForVoiceTrackerMinimumMembers = 80706,
 
     // Guild Settings
     invalidNumberOfGiveawayCreatorRoles = 90000,
@@ -352,6 +366,27 @@ export enum APIErrorCodes {
     duplicateVoteStreakRoleStreak = 150506,
     tooManyVoteStreakRolesPerStreak = 150507,
     tooManyVoteStreakRoleStreaks = 150508,
+
+    // Voice Tracker Settings
+    voiceTrackerIsNotEnabled = 180000,
+
+    invalidNumberOfVoiceRoles = 180100,
+    voiceRoleNotFound = 180101,
+    voiceRoleIsAboveBotsHighestRole = 180102,
+    voiceRoleIsAboveUsersHighestRole = 180103,
+    invalidVoiceRoleVoiceTime = 180104,
+    duplicateVoiceRole = 180105,
+    duplicateVoiceRoleVoiceTime = 180106,
+    tooManyVoiceRolesPerVoiceTime = 180107,
+    tooManyVoiceRoleVoiceTimes = 180108,
+    voiceRoleSyncIsOnCooldown = 180109,
+    voiceRoleSyncIsAlreadyRunning = 180110,
+
+    invalidNumberOfVoiceTrackerBlacklistedChannelIds = 180200,
+    voiceTrackerBlacklistedChannelNotFound = 180201,
+    voiceTrackerBlacklistedRoleNotFound = 180202,
+
+    invalidVoiceTrackerMinimumMembers = 180300,
 
     // Misc
     youLackPermissionToPerformThisAction = 900000,

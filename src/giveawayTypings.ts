@@ -1,3 +1,5 @@
+import type { VoiceTimePeriod } from './voiceTrackerTypings.js';
+
 export interface GiveawayData {
     creatorID: string;
     channelID: string;
@@ -18,6 +20,8 @@ export interface GiveawayData {
     requiredServerBoosts: number | null;
     requiredTimeInServer: number | null;
     requireServerTag: boolean | null;
+    requiredVoiceTime: number | null;
+    requiredVoiceTimePeriod: VoiceTimePeriod | null;
     requiredVotes: number | null;
     requiredVotesPeriod: number | null;
     requirementBypassRoleIDs: string[] | null;
