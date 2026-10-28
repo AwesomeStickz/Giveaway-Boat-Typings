@@ -5,10 +5,12 @@
     "types": "dist/index.d.ts",
     "type": "module",
     "scripts": {
-        "prepare": "tsc",
-        "preinstall": "tsc"
+        "prepare": "tsc"
     },
     "dependencies": {
         "tslib": "^2.6.0"
+    },
+    "devDependencies": {
+        "typescript": "^6"
     }
 }
