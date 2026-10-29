@@ -199,6 +199,7 @@ export enum APIErrorCodes {
     lacksPremiumForVoteStreakGracePeriod = 80405,
     lacksPremiumForVoteStreakRoles = 80406,
     lacksPremiumForVoteReminders = 80407,
+    lacksPremiumForVoteStreakRoleSync = 80408,
 
     // Voice Tracker Premium
     lacksPremiumForMoreVoiceRoles = 80700,
@@ -366,6 +367,8 @@ export enum APIErrorCodes {
     duplicateVoteStreakRoleStreak = 150506,
     tooManyVoteStreakRolesPerStreak = 150507,
     tooManyVoteStreakRoleStreaks = 150508,
+    voteStreakRoleSyncIsOnCooldown = 150509,
+    voteStreakRoleSyncIsAlreadyRunning = 150510,
 
     // Voice Tracker Settings
     voiceTrackerIsNotEnabled = 180000,
