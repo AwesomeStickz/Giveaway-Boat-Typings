@@ -1,3 +1,4 @@
+import type { FormCopy } from './formTypings.js';
 import type { VoiceTimePeriod } from './voiceTrackerTypings.js';
 
 export interface GiveawayData {
@@ -50,6 +51,12 @@ export interface GiveawayData {
     giveawayWinnersThreadMessage: string | null;
     claimDuration: number | null;
     claimRerollLimit: number | null;
+    entryFormId: string | null;
+    winnerFormId: string | null;
+    /** A form to make and use as the entry form when the giveaway is saved, or the copy a template keeps instead of an entry form ID */
+    entryForm: FormCopy | null;
+    /** A form to make and use as the winner form when the giveaway ends, kept as a copy until then. A template also keeps its winner form as a copy instead of a winner form ID */
+    winnerForm: FormCopy | null;
     customDiscordMessageObjects: {
         giveawayMessage: DiscordMessageData | null;
     } | null;

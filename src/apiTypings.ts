@@ -133,6 +133,11 @@ export enum APIErrorCodes {
     requiredVotesPeriodIsMore = 53704,
     voteTrackerIsNotSetUp = 53705,
 
+    giveawayEntryFormNotFound = 53800,
+    giveawayWinnerFormNotFound = 53801,
+    invalidGiveawayEntryForm = 53802,
+    invalidGiveawayWinnerForm = 53803,
+
     requiredVoiceTimeIsNotNumber = 53900,
     requiredVoiceTimeIsLess = 53901,
     requiredVoiceTimeIsMore = 53902,
@@ -169,6 +174,8 @@ export enum APIErrorCodes {
     lacksPremiumForRequireServerTag = 80010,
     lacksPremiumForClaimDuration = 80011,
     lacksPremiumForRequiredVotes = 80012,
+    lacksPremiumForGiveawayEntryForm = 80013,
+    lacksPremiumForGiveawayWinnerForm = 80014,
 
     // Leveling Premium
     lacksPremiumForCustomLevelUpMessage = 80100,
@@ -200,6 +207,40 @@ export enum APIErrorCodes {
     lacksPremiumForVoteStreakRoles = 80406,
     lacksPremiumForVoteReminders = 80407,
     lacksPremiumForVoteStreakRoleSync = 80408,
+
+    // Forms Premium
+    lacksPremiumForMoreForms = 80600,
+    lacksPremiumForMoreFormQuestions = 80601,
+    lacksPremiumForFormResponseValidation = 80602,
+    lacksPremiumForMoreFormRequiredRoles = 80603,
+    lacksPremiumForMoreFormBlockedRoles = 80604,
+    lacksPremiumForFormRequiredAccountAge = 80605,
+    lacksPremiumForFormRequiredTimeInServer = 80606,
+    lacksPremiumForFormServerTagRequirement = 80607,
+    lacksPremiumForFormRequiredLevel = 80608,
+    lacksPremiumForFormRequiredMessages = 80609,
+    lacksPremiumForFormMultipleResponses = 80610,
+    lacksPremiumForFormResponseCooldown = 80612,
+    lacksPremiumForFormSubmitRoles = 80613,
+    lacksPremiumForMoreFormAcceptRoles = 80614,
+    lacksPremiumForMoreFormAcceptRemoveRoles = 80615,
+    lacksPremiumForMoreFormDenyRoles = 80616,
+    lacksPremiumForMoreFormDenyRemoveRoles = 80617,
+    lacksPremiumForFormPingRoles = 80618,
+    lacksPremiumForFormReviewerRoles = 80619,
+    lacksPremiumForAnonymousForms = 80620,
+    lacksPremiumForCustomFormConfirmationMessage = 80621,
+    lacksPremiumForCustomFormAcceptMessage = 80622,
+    lacksPremiumForCustomFormDenyMessage = 80623,
+    lacksPremiumForMoreFormPanels = 80624,
+    lacksPremiumForCustomFormPanelMessage = 80625,
+    lacksPremiumForMoreFormTemplates = 80626,
+    lacksPremiumForFormResponseHistory = 80627,
+    lacksPremiumForFormDenyResponsesOnLeave = 80628,
+    lacksPremiumForFormOpenTime = 80629,
+    lacksPremiumForFormCloseTime = 80630,
+    lacksPremiumForFormExportColumns = 80631,
+    lacksPremiumForFormExportTimezone = 80632,
 
     // Voice Tracker Premium
     lacksPremiumForMoreVoiceRoles = 80700,
@@ -369,6 +410,67 @@ export enum APIErrorCodes {
     tooManyVoteStreakRoleStreaks = 150508,
     voteStreakRoleSyncIsOnCooldown = 150509,
     voteStreakRoleSyncIsAlreadyRunning = 150510,
+
+    // Forms
+    invalidFormName = 170000,
+    invalidFormDescription = 170001,
+    formNotFound = 170002,
+
+    invalidNumberOfFormQuestions = 170100,
+    invalidFormQuestion = 170101,
+    duplicateFormQuestionId = 170102,
+    invalidFormResponseValidation = 170103,
+
+    formReviewChannelNotFound = 170200,
+
+    formRequiredRoleNotFound = 170300,
+    formBlockedRoleNotFound = 170301,
+    invalidFormRequiredAccountAge = 170302,
+    invalidFormRequiredTimeInServer = 170303,
+    invalidFormRequiredLevel = 170304,
+    invalidFormRequiredMessages = 170305,
+
+    invalidNumberOfFormRoles = 170400,
+    formRoleNotFound = 170401,
+    formRoleIsAboveBotsHighestRole = 170402,
+    formRoleIsAboveUsersHighestRole = 170403,
+
+    invalidFormResponseCooldown = 170500,
+
+    invalidFormMessage = 170600,
+
+    invalidNumberOfFormPanelForms = 170700,
+    formPanelChannelNotFound = 170701,
+    invalidFormPanelTitle = 170702,
+    invalidFormPanelDescription = 170703,
+    invalidFormPanelMessage = 170704,
+    formPanelNotFound = 170705,
+    missingPermissionsInFormPanelChannel = 170706,
+
+    invalidFormTemplateName = 170800,
+    duplicateFormTemplateName = 170801,
+    tooManyFormTemplates = 170802,
+    formTemplateNotFound = 170803,
+
+    formIsNotAcceptingResponses = 170900,
+    formRequirementsNotMet = 170901,
+    formResponseIsOnCooldown = 170902,
+    formAlreadyResponded = 170903,
+    invalidFormAnswers = 170904,
+    notAMemberOfFormServer = 170905,
+    formResponseNotFound = 170906,
+    formResponseIsAlreadyReviewed = 170907,
+    invalidFormReviewReason = 170908,
+    formDoesntReviewResponses = 170909,
+    formResponseIsNotLatest = 170910,
+    formCantBeAnsweredOnWebsite = 170911,
+
+    invalidFormOpenTime = 171000,
+    invalidFormCloseTime = 171001,
+
+    invalidFormExportTimezone = 171100,
+    invalidFormExportColumns = 171101,
+    formExportIsOnCooldown = 171102,
 
     // Voice Tracker Settings
     voiceTrackerIsNotEnabled = 180000,
