@@ -235,7 +235,7 @@ export const formIdRegex = /^[A-Za-z0-9]{16}$/;
 /** Forms and panels are unlimited with premium */
 export const formLimits = {
     forms: { free: 2 },
-    questions: { free: 5, premium: 100 },
+    questions: { free: 10, premium: 100 },
     templates: { free: 1, premium: 100 },
     panels: { free: 1 },
     /** One row of buttons */
