@@ -292,8 +292,8 @@ export const canFormBeAnsweredInDMs = (questions: FormQuestion[]) => questions.l
 
 /** The ways members can answer a form: the ones it's set to (every way by default) that work for its questions. The website works for every form, so it's used when none of the others do */
 export const getFormResponseSources = (questions: FormQuestion[], responseSources: FormResponseSources[] | null | undefined, isPremiumGuild: boolean) => {
-    // Over 5 questions, a form takes several pop-ups in a row, which is premium
-    const workingResponseSources = (responseSources || [FormResponseSources.PopUp, FormResponseSources.Website, FormResponseSources.DM]).filter((responseSource) => (responseSource === FormResponseSources.PopUp ? questions.length > 0 && (questions.length <= 5 || isPremiumGuild) : responseSource === FormResponseSources.DM ? canFormBeAnsweredInDMs(questions) : true));
+    // Over 5 questions, a form takes several pop-ups in a row, up to the server's question limit
+    const workingResponseSources = (responseSources || [FormResponseSources.PopUp, FormResponseSources.Website, FormResponseSources.DM]).filter((responseSource) => (responseSource === FormResponseSources.PopUp ? questions.length > 0 && questions.length <= (isPremiumGuild ? formLimits.questions.premium : formLimits.questions.free) : responseSource === FormResponseSources.DM ? canFormBeAnsweredInDMs(questions) : true));
 
     return workingResponseSources.length ? workingResponseSources : [FormResponseSources.Website];
 };
