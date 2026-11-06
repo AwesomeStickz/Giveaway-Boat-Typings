@@ -99,14 +99,16 @@ export enum APIErrorCodes {
     stackEntriesIsInvalid = 52600,
     persistEntriesIsInvalid = 52601,
 
-    giveawayWinnersRoleIsNotFound = 52700,
-    giveawayWinnersRoleTypeIsNotAllowed = 52701,
-    giveawayWinnersRoleIsAboveBotsHighestRole = 52702,
-    giveawayWinnersRoleIsAboveUsersHighestRole = 52703,
+    giveawayWinnerRoleIsNotFound = 52700,
+    giveawayWinnerRoleTypeIsNotAllowed = 52701,
+    giveawayWinnerRoleIsAboveBotsHighestRole = 52702,
+    giveawayWinnerRoleIsAboveUsersHighestRole = 52703,
+    giveawayWinnerRolesIsMoreThanAllowedInNonPremiumServer = 52704,
+    giveawayWinnerRolesIsMore = 52705,
 
-    giveawayWinnersRoleRemoveDurationIsLess = 52800,
-    giveawayWinnersRoleRemoveDurationIsMore = 52801,
-    giveawayWinnersRoleRemoveDurationIsMoreThanAllowedInNonPremiumServer = 52802,
+    giveawayWinnerRolesRemoveDurationIsLess = 52800,
+    giveawayWinnerRolesRemoveDurationIsMore = 52801,
+    giveawayWinnerRolesRemoveDurationIsMoreThanAllowedInNonPremiumServer = 52802,
 
     giveawayShowEntryCaptchaIsInvalid = 52900,
 
@@ -176,7 +178,7 @@ export enum APIErrorCodes {
     lacksPremiumForRequiredVotes = 80012,
     lacksPremiumForGiveawayEntryForm = 80013,
     lacksPremiumForGiveawayWinnerForm = 80014,
-    lacksPremiumForGiveawayWinnersRoleRemoveDuration = 80015,
+    lacksPremiumForGiveawayWinnerRolesRemoveDuration = 80015,
 
     // Leveling Premium
     lacksPremiumForCustomLevelUpMessage = 80100,

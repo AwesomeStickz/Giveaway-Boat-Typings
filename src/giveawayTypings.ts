@@ -39,8 +39,8 @@ export interface GiveawayData {
     giveawayWinnersDMMessage: string | null;
     stackEntries: boolean | null;
     persistEntries: boolean | null;
-    giveawayWinnersRoleID: string | null;
-    giveawayWinnersRoleRemoveDuration: number | null;
+    giveawayWinnerRoleIds: string[] | null;
+    giveawayWinnerRolesRemoveDuration: number | null;
     repeatDuration: number | null;
     repeatTimes: number | null;
     showGiveawayEntryCaptcha: boolean | null;
