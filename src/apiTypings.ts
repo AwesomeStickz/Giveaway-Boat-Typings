@@ -468,6 +468,7 @@ export enum APIErrorCodes {
 
     invalidFormOpenTime = 171000,
     invalidFormCloseTime = 171001,
+    invalidFormTemplateCloseAfter = 171002,
 
     invalidFormExportTimezone = 171100,
     invalidFormExportColumns = 171101,

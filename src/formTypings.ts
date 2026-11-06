@@ -273,6 +273,8 @@ export const formLimits = {
     responseCooldown: { min: 60000, max: 31536000000 },
     /** How far ahead a form can be set to open or close: 1 year */
     openCloseTime: 31536000000,
+    /** How long after a form is made from a template it closes: 1 minute to 1 year */
+    templateCloseAfter: { min: 60000, max: 31536000000 },
     /** Up to 10 years */
     requiredAccountAge: 315360000000,
     requiredTimeInServer: 315360000000,
