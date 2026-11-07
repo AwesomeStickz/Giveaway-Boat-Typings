@@ -145,6 +145,19 @@ export enum APIErrorCodes {
     requiredVoiceTimeIsMore = 53902,
     invalidRequiredVoiceTimePeriod = 53903,
 
+    minParticipantsIsNotNumber = 54000,
+    minParticipantsIsLess = 54001,
+    minParticipantsIsMore = 54002,
+    minParticipantsCannotBeUsedWithDrop = 54003,
+    minParticipantsIsMoreThanMaxParticipants = 54004,
+    minParticipantsWasNotMet = 54005,
+
+    maxParticipantsIsNotNumber = 54100,
+    maxParticipantsIsLess = 54101,
+    maxParticipantsIsMore = 54102,
+    maxParticipantsCannotBeUsedWithDrop = 54103,
+    maxParticipantsIsLessThanWinnersCount = 54104,
+
     // Scheduling
     scheduledGiveawayNotFound = 60000,
 

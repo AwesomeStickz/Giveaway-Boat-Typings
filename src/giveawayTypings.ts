@@ -8,6 +8,8 @@ export interface GiveawayData {
     duration: number;
     endTime: number;
     numberOfWinners: number;
+    minParticipants: number | null;
+    maxParticipants: number | null;
     item: string;
     hostID: string | null;
     requiredAccountAge: number | null;
