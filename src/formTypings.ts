@@ -63,8 +63,8 @@ export interface FormExportSettings {
     columns?: { key: string; isIncluded: boolean }[];
 }
 
-/** A form's name, questions and settings without the form itself, as a giveaway template saves it. A giveaway or schedule made with one gets a new form made from it when it's saved */
-export interface FormCopy {
+/** A form's name, questions and settings, without what belongs to one form. Form templates and giveaways keep these */
+export interface FormSettings {
     name: string;
     description?: string | null;
     questions: FormQuestion[];
@@ -93,7 +93,24 @@ export interface FormCopy {
     acceptMessage?: string | null;
     denyMessage?: string | null;
     exportSettings?: FormExportSettings | null;
+    /** In milliseconds. Forms made from these settings close this long after they're made. Premium */
+    closeAfter?: number | null;
 }
+
+/** A stored form: its settings plus its own ID, server, state and dates */
+export interface Form extends Required<Omit<FormSettings, 'closeAfter'>> {
+    id: string;
+    guildId: string;
+    isGiveawayForm: boolean | null;
+    isClosed: boolean | null;
+    opensAt: number | null;
+    closesAt: number | null;
+    creatorId: string;
+    createdAt: number;
+}
+
+/** A form template or form that a giveaway's form is made from when it's needed, so later changes to it still apply */
+export type FormReference = { formTemplateId: string } | { formId: string };
 
 /** Starting points offered when a form is made. Applications have their responses accepted or denied, plain forms just collect them */
 export const formStarterTemplates = {
@@ -210,7 +227,7 @@ export const formStarterTemplates = {
             { id: 'improve', type: 'paragraph', title: 'What should we improve?' },
         ],
     },
-} satisfies Record<string, FormCopy>;
+} satisfies Record<string, FormSettings>;
 
 export type FormStarterTemplate = keyof typeof formStarterTemplates;
 
