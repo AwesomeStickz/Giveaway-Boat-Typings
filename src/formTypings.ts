@@ -61,6 +61,8 @@ export interface FormExportSettings {
     timezone?: string;
     /** The columns in the order they're exported, each on or off. Columns added since, like new questions, come after them. Premium */
     columns?: { key: string; isIncluded: boolean }[];
+    /** Attaches an export with these settings to the Form Closed log when the form closes */
+    shouldAttachResponsesToCloseLog?: boolean;
 }
 
 /** A form's name, questions and settings, without what belongs to one form. Form templates and giveaways keep these */
