@@ -192,6 +192,7 @@ export enum APIErrorCodes {
     lacksPremiumForGiveawayEntryForm = 80013,
     lacksPremiumForGiveawayWinnerForm = 80014,
     lacksPremiumForGiveawayWinnerRolesRemoveDuration = 80015,
+    lacksPremiumForGiveawayEmoji = 80016,
 
     // Leveling Premium
     lacksPremiumForCustomLevelUpMessage = 80100,

@@ -34,6 +34,7 @@ export interface GiveawayData {
     thumbnailLink: string | null;
     color: string | null;
     endColor: string | null;
+    emoji: string | null;
     entryConfirmationMessage: string | null;
     entryDenyMessage: string | null;
     entryRemoveMessage: string | null;
@@ -88,9 +89,6 @@ export interface GiveawayEditData extends GiveawayData {
 
 export interface FullGiveawayData extends GiveawayData {
     messageID: string;
-    giveawayReactionEmojiID: string | null;
-    giveawayReactionEmojiName: string | null;
-    isGiveawayReactionEmojiAnimated: boolean | null;
     botID: string;
     useButtons: boolean | null;
     previousWinners: string[] | null;
