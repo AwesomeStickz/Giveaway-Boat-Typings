@@ -158,6 +158,9 @@ export enum APIErrorCodes {
     maxParticipantsCannotBeUsedWithDrop = 54103,
     maxParticipantsIsLessThanWinnersCount = 54104,
 
+    invalidGiveawayEntryCode = 54200,
+    giveawayEntryCodeCannotBeUsedWithReactions = 54201,
+
     // Scheduling
     scheduledGiveawayNotFound = 60000,
 
@@ -193,6 +196,7 @@ export enum APIErrorCodes {
     lacksPremiumForGiveawayWinnerForm = 80014,
     lacksPremiumForGiveawayWinnerRolesRemoveDuration = 80015,
     lacksPremiumForGiveawayEmoji = 80016,
+    lacksPremiumForGiveawayEntryCode = 80017,
 
     // Leveling Premium
     lacksPremiumForCustomLevelUpMessage = 80100,

@@ -35,6 +35,8 @@ export interface GiveawayData {
     color: string | null;
     endColor: string | null;
     emoji: string | null;
+    /** The code members must type to enter, never shown to them */
+    entryCode: string | null;
     entryConfirmationMessage: string | null;
     entryDenyMessage: string | null;
     entryRemoveMessage: string | null;
