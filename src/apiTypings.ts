@@ -71,6 +71,7 @@ export enum APIErrorCodes {
     entriesIsLess = 51802,
     entriesIsMore = 51803,
     entriesIsMoreThanAllowedInNonPremiumServer = 51804,
+    extraEntryRolesIsMoreThanAllowedInNonPremiumServer = 51805,
 
     invalidImageLink = 51900,
     invalidThumbnailLink = 51901,
@@ -197,6 +198,7 @@ export enum APIErrorCodes {
     lacksPremiumForGiveawayWinnerRolesRemoveDuration = 80015,
     lacksPremiumForGiveawayEmoji = 80016,
     lacksPremiumForGiveawaySecretCode = 80017,
+    reachedMaxActiveGiveawaysLimitWithoutPremium = 80018,
 
     // Leveling Premium
     lacksPremiumForCustomLevelUpMessage = 80100,
